@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Description, Field, Input, Label } from '@headlessui/react';
+import { Description, Field, Input, Label, Button } from '@headlessui/react';
 import clsx from 'clsx'
 
 class Form extends Component {
@@ -17,6 +17,9 @@ class Form extends Component {
                         )}
                     />
                 </Field>
+                <Button className="rounded bg-sky-600 py-2 px-4 text-sm text-black data-[hover]:bg-sky-500 data-[active]:bg-sky-700">
+                    Submit
+                </Button>
             </div>
         );
     }
