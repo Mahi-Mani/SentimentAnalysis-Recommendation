@@ -6,7 +6,7 @@ class Form extends Component {
 
     render() {
         return (
-            <div className="w-full max-w-md px-4">
+            <div className="container mx-auto w-full max-w-md px-4">
                 <Field>
                     <Label className="text-sm/6 font-medium text-black">Movie Name</Label>
                     <Description className="text-sm/6 text-black/50">Enter a movie name, to see reviews.</Description>
