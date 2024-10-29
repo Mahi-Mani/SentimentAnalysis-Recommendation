@@ -16,12 +16,19 @@ class App extends Component {
     });
   }
 
+  handleClick = event => {
+    event.preventDefault();
+    const {movieName} = this.state;
+    console.log(this.state.movieName);
+  }
+
   render() {
   return (
     <div>
       <Navbar />
       <Form 
         handleInputChange={this.handleInputChange}
+        handleClick={this.handleClick}
       />
     </div>
   );

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Description, Field, Input, Label, Button } from '@headlessui/react';
 import clsx from 'clsx'
 
-function Form({handleInputChange}) {
+function Form({handleInputChange, handleClick}) {
         return (
             <div className="container mx-auto w-full max-w-md px-4">
                 <Field>
@@ -18,7 +18,7 @@ function Form({handleInputChange}) {
                         onChange={handleInputChange}
                     />
                 </Field>
-                <Button className="rounded bg-sky-600 py-2 px-4 text-sm text-black data-[hover]:bg-sky-500 data-[active]:bg-sky-700">
+                <Button className="rounded bg-sky-600 py-2 px-4 text-sm text-black data-[hover]:bg-sky-500 data-[active]:bg-sky-700" onClick={handleClick}>
                     Submit
                 </Button>
             </div>
