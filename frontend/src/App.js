@@ -3,6 +3,7 @@ import './App.css';
 import {React, Component} from 'react';
 import Navbar from './components/Navbar';
 import Form from './components/Form';
+import API from './utils/API';
 
 class App extends Component {
   state = {
@@ -19,7 +20,17 @@ class App extends Component {
   handleClick = event => {
     event.preventDefault();
     const {movieName} = this.state;
-    console.log(this.state.movieName);
+    this.getMovieDetails();
+    console.log(movieName);
+  }
+
+  getMovieDetails = () => {
+    const {movieName} = this.state;
+    API.getDetails(movieName).then(res => {
+      console.log(res);
+    }).catch(err => {
+      console.log(err);
+    })
   }
 
   render() {
