@@ -59,7 +59,7 @@ class App extends Component {
             />
             )
           })
-          : "Seach for a movie to begin!"}
+          : ""}
       </div>
     );
   }
