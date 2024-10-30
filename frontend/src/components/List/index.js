@@ -4,6 +4,7 @@ import { Button } from '@headlessui/react';
 function List({ title, overview, imageSrc, index }) {
     return (
         <>
+            <br></br>
             {index % 2 == 0 ?
                 <div
                     className="block rounded-lg bg-white shadow-secondary-1 dark:bg-surface-dark container m-auto grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-3">
