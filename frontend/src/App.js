@@ -53,6 +53,7 @@ class App extends Component {
             <List
               title={movie.title}
               overview={movie.overview}
+              imageSrc={`http://image.tmdb.org/t/p/w500${movie.poster_path}`}
             />
             )
           })
