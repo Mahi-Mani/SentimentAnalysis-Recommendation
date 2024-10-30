@@ -48,12 +48,14 @@ class App extends Component {
           handleClick={this.handleClick}
         />
         {this.state.movies.length > 0 ?
-          this.state.movies.map(movie => {
+          this.state.movies.map((movie, index) => {
             return (
             <List
               title={movie.title}
               overview={movie.overview}
               imageSrc={`http://image.tmdb.org/t/p/w500${movie.poster_path}`}
+              key={index}
+              index={index}
             />
             )
           })
