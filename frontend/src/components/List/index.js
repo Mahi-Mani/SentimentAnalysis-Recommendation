@@ -2,7 +2,7 @@ import { React, Component } from "react";
 import { Button } from '@headlessui/react';
 import { Link } from 'react-router-dom';
 
-function List({ title, overview, imageSrc, index, movieId, handleReviews }) {
+function List({ title, overview, imageSrc, index, movieId, backdrop }) {
     return (
         <>
             <br></br>
@@ -28,7 +28,7 @@ function List({ title, overview, imageSrc, index, movieId, handleReviews }) {
                             {overview}
                         </p>
                         <Button className="rounded bg-sky-600 py-2 px-4 text-sm text-black data-[hover]:bg-sky-500 data-[active]:bg-sky-700">
-                            <Link to="/reviews" state={{movieId: movieId}}>
+                            <Link to="/reviews" state={{ movieId: movieId, backdrop: backdrop }}>
                                 View Reviews
                             </Link>
                         </Button>
@@ -49,7 +49,7 @@ function List({ title, overview, imageSrc, index, movieId, handleReviews }) {
                             {overview}
                         </p>
                         <Button className="rounded bg-sky-600 py-2 px-4 text-sm text-black data-[hover]:bg-sky-500 data-[active]:bg-sky-700" id={movieId}>
-                            <Link to="/reviews" state={{movieId: movieId}}>
+                            <Link to="/reviews" state={{ movieId: movieId, backdrop: backdrop }}>
                                 View Reviews
                             </Link>
                         </Button>

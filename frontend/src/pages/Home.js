@@ -41,7 +41,10 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <Navbar />
+                <Navbar
+                    page="homepage"
+                    backdrop="none"
+                />
                 <Form
                     handleInputChange={this.handleInputChange}
                     handleClick={this.handleClick}
@@ -56,6 +59,7 @@ class Home extends Component {
                                 key={index}
                                 index={index}
                                 movieId={movie.id}
+                                backdrop={movie.backdrop_path}
                             />
                         )
                     })
