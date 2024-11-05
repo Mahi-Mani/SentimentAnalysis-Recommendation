@@ -3,29 +3,29 @@ import { React } from "react";
 function Display() {
     return (
         <>
-            <div class="mx-auto text-center md:max-w-xl lg:max-w-3xl">
-                <h3 class="mb-6 text-3xl font-bold">Testimonials</h3>
+            <div className="mx-auto text-center md:max-w-xl lg:max-w-3xl">
+                <h3 className="mb-6 text-3xl font-bold">Testimonials</h3>
                 <p
-                    class="mb-6 pb-2 text-neutral-600 dark:text-neutral-300 md:mb-12 md:pb-0">
+                    className="mb-6 pb-2 text-neutral-600 dark:text-neutral-300 md:mb-12 md:pb-0">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error
                     amet numquam iure provident voluptate esse quasi, veritatis totam
                     voluptas nostrum quisquam eum porro a pariatur veniam.
                 </p>
             </div>
 
-            <div class="grid gap-6 text-center md:grid-cols-3 lg:gap-12">
-                <div class="mb-12 md:mb-0">
-                    <div class="mb-6 flex justify-center">
+            <div className="grid gap-6 text-center md:grid-cols-3 lg:gap-12">
+                <div className="mb-12 md:mb-0">
+                    <div className="mb-6 flex justify-center">
                         <img
                             src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg"
-                            class="w-32 rounded-full shadow-lg dark:shadow-black/30" />
+                            className="w-32 rounded-full shadow-lg dark:shadow-black/30" />
                     </div>
-                    <h5 class="mb-4 text-xl font-semibold">Maria Smantha</h5>
-                    <h6 class="mb-4 font-semibold text-primary dark:text-primary-400">
+                    <h5 className="mb-4 text-xl font-semibold">Maria Smantha</h5>
+                    <h6 className="mb-4 font-semibold text-primary dark:text-primary-400">
                         Web Developer
                     </h6>
-                    <p class="mb-4 text-neutral-600 dark:text-neutral-300">
-                        <span class="inline-block pe-2 [&>svg]:w-5"
+                    <p className="mb-4 text-neutral-600 dark:text-neutral-300">
+                        <span className="inline-block pe-2 [&>svg]:w-5"
                         ><svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="currentColor"
@@ -37,13 +37,13 @@ function Display() {
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos
                         id officiis hic tenetur quae quaerat ad velit ab hic tenetur.
                     </p>
-                    <ul class="mb-0 flex items-center justify-center">
+                    <ul className="mb-0 flex items-center justify-center">
                         <li>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
-                                class="h-5 w-5 text-yellow-500">
+                                className="h-5 w-5 text-yellow-500">
                                 <path
                                     fill-rule="evenodd"
                                     d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
@@ -55,7 +55,7 @@ function Display() {
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
-                                class="h-5 w-5 text-yellow-500">
+                                className="h-5 w-5 text-yellow-500">
                                 <path
                                     fill-rule="evenodd"
                                     d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
@@ -67,7 +67,7 @@ function Display() {
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
-                                class="h-5 w-5 text-yellow-500">
+                                className="h-5 w-5 text-yellow-500">
                                 <path
                                     fill-rule="evenodd"
                                     d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
@@ -79,7 +79,7 @@ function Display() {
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
-                                class="h-5 w-5 text-yellow-500">
+                                className="h-5 w-5 text-yellow-500">
                                 <path
                                     fill-rule="evenodd"
                                     d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
@@ -91,7 +91,7 @@ function Display() {
                                 clip-rule="evenodd"
                                 fill-rule="evenodd"
                                 fill="currentColor"
-                                class="h-5 w-5 text-yellow-500"
+                                className="h-5 w-5 text-yellow-500"
                                 stroke-linejoin="round"
                                 stroke-miterlimit="2"
                                 viewBox="0 0 24 24"
@@ -103,18 +103,18 @@ function Display() {
                         </li>
                     </ul>
                 </div>
-                <div class="mb-12 md:mb-0">
-                    <div class="mb-6 flex justify-center">
+                <div className="mb-12 md:mb-0">
+                    <div className="mb-6 flex justify-center">
                         <img
                             src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg"
-                            class="w-32 rounded-full shadow-lg dark:shadow-black/30" />
+                            className="w-32 rounded-full shadow-lg dark:shadow-black/30" />
                     </div>
-                    <h5 class="mb-4 text-xl font-semibold">Lisa Cudrow</h5>
-                    <h6 class="mb-4 font-semibold text-primary dark:text-primary-400">
+                    <h5 className="mb-4 text-xl font-semibold">Lisa Cudrow</h5>
+                    <h6 className="mb-4 font-semibold text-primary dark:text-primary-400">
                         Graphic Designer
                     </h6>
-                    <p class="mb-4 text-neutral-600 dark:text-neutral-300">
-                        <span class="inline-block pe-2 [&>svg]:w-5"
+                    <p className="mb-4 text-neutral-600 dark:text-neutral-300">
+                        <span className="inline-block pe-2 [&>svg]:w-5"
                         ><svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="currentColor"
@@ -126,13 +126,13 @@ function Display() {
                         Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
                         suscipit laboriosam, nisi ut aliquid commodi.
                     </p>
-                    <ul class="mb-0 flex items-center justify-center">
+                    <ul className="mb-0 flex items-center justify-center">
                         <li>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
-                                class="h-5 w-5 text-yellow-500">
+                                className="h-5 w-5 text-yellow-500">
                                 <path
                                     fill-rule="evenodd"
                                     d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
@@ -144,7 +144,7 @@ function Display() {
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
-                                class="h-5 w-5 text-yellow-500">
+                                className="h-5 w-5 text-yellow-500">
                                 <path
                                     fill-rule="evenodd"
                                     d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
@@ -156,7 +156,7 @@ function Display() {
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
-                                class="h-5 w-5 text-yellow-500">
+                                className="h-5 w-5 text-yellow-500">
                                 <path
                                     fill-rule="evenodd"
                                     d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
@@ -168,7 +168,7 @@ function Display() {
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
-                                class="h-5 w-5 text-yellow-500">
+                                className="h-5 w-5 text-yellow-500">
                                 <path
                                     fill-rule="evenodd"
                                     d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
@@ -180,7 +180,7 @@ function Display() {
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
-                                class="h-5 w-5 text-yellow-500">
+                                className="h-5 w-5 text-yellow-500">
                                 <path
                                     fill-rule="evenodd"
                                     d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
@@ -189,18 +189,18 @@ function Display() {
                         </li>
                     </ul>
                 </div>
-                <div class="mb-0">
-                    <div class="mb-6 flex justify-center">
+                <div className="mb-0">
+                    <div className="mb-6 flex justify-center">
                         <img
                             src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg"
-                            class="w-32 rounded-full shadow-lg dark:shadow-black/30" />
+                            className="w-32 rounded-full shadow-lg dark:shadow-black/30" />
                     </div>
-                    <h5 class="mb-4 text-xl font-semibold">John Smith</h5>
-                    <h6 class="mb-4 font-semibold text-primary dark:text-primary-400">
+                    <h5 className="mb-4 text-xl font-semibold">John Smith</h5>
+                    <h6 className="mb-4 font-semibold text-primary dark:text-primary-400">
                         Marketing Specialist
                     </h6>
-                    <p class="mb-4 text-neutral-600 dark:text-neutral-300">
-                        <span class="inline-block pe-2 [&>svg]:w-5"
+                    <p className="mb-4 text-neutral-600 dark:text-neutral-300">
+                        <span className="inline-block pe-2 [&>svg]:w-5"
                         ><svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="currentColor"
@@ -212,13 +212,13 @@ function Display() {
                         At vero eos et accusamus et iusto odio dignissimos ducimus qui
                         blanditiis praesentium voluptatum deleniti atque corrupti.
                     </p>
-                    <ul class="mb-0 flex items-center justify-center">
+                    <ul className="mb-0 flex items-center justify-center">
                         <li>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
-                                class="h-5 w-5 text-yellow-500">
+                                className="h-5 w-5 text-yellow-500">
                                 <path
                                     fill-rule="evenodd"
                                     d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
@@ -230,7 +230,7 @@ function Display() {
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
-                                class="h-5 w-5 text-yellow-500">
+                                className="h-5 w-5 text-yellow-500">
                                 <path
                                     fill-rule="evenodd"
                                     d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
@@ -242,7 +242,7 @@ function Display() {
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
-                                class="h-5 w-5 text-yellow-500">
+                                className="h-5 w-5 text-yellow-500">
                                 <path
                                     fill-rule="evenodd"
                                     d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
@@ -254,7 +254,7 @@ function Display() {
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
-                                class="h-5 w-5 text-yellow-500">
+                                className="h-5 w-5 text-yellow-500">
                                 <path
                                     fill-rule="evenodd"
                                     d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
@@ -265,11 +265,11 @@ function Display() {
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
-                                class="h-5 w-5 text-yellow-500"
+                                className="h-5 w-5 text-yellow-500"
                                 viewBox="0 0 24 24"
                                 stroke-width="1.5"
                                 stroke="currentColor"
-                                className="h-6 w-6">
+                                class="h-6 w-6">
                                 <path
                                     stroke-linecap="round"
                                     stroke-linejoin="round"
