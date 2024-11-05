@@ -48,7 +48,9 @@ class Reviews extends Component {
                     {this.state.reviews.map(review => {
                         return (
                             <Display
-                                review={review}
+                                author={review.author}
+                                content={review.content}
+                                date={review.created_at}
                             />
                         )
                     })}
