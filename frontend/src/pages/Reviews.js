@@ -30,7 +30,7 @@ class Reviews extends Component {
             this.setState({
                 backdrop: backdrop,
                 movieId: movieId,
-                reviews: data.data.results
+                reviews: data.data.results,
             });
         })
     }
@@ -51,6 +51,7 @@ class Reviews extends Component {
                                 author={review.author}
                                 content={review.content}
                                 date={review.created_at}
+                                avatar={review.author_details.avatar_path}
                             />
                         )
                     })}

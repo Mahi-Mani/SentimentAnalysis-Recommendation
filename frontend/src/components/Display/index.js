@@ -1,14 +1,20 @@
 import { React } from "react";
 
-function Display({ author, content, date }) {
+function Display({ author, content, date, avatar }) {
     return (
         <>
             {/* <div className="grid gap-6 text-center md:grid-cols-3 lg:gap-12"> */}
             <div className="mb-12 md:mb-0">
                 <div className="mb-6 flex justify-center">
-                    <img
-                        src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg"
-                        className="w-32 rounded-full shadow-lg dark:shadow-black/30" />
+                    {avatar == null ?
+                        <img
+                            src="https://cdn-icons-png.flaticon.com/512/6596/6596121.png"
+                            className="w-32 rounded-full shadow-lg dark:shadow-black/30" />
+                        :
+                        <img
+                            src={`http://image.tmdb.org/t/p/w500/${avatar}.jpg`}
+                            className="w-32 rounded-full shadow-lg dark:shadow-black/30" />}
+
                 </div>
                 <h5 className="mb-4 text-xl font-semibold">{author}</h5>
                 <h6 className="mb-4 font-semibold text-primary dark:text-primary-400">
