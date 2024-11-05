@@ -2,6 +2,8 @@ import { React, Component } from "react";
 import { useLocation } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Display from "../components/Display";
+import Header from "../components/Header";
+import DisplayWrapper from "../components/DisplayWrapper";
 import API from "../utils/API";
 
 function wrapperReviews(WrapperComponent) {
@@ -32,7 +34,7 @@ class Reviews extends Component {
             });
         })
     }
-    
+
     render() {
         console.log(this.state.reviews);
         return (
@@ -41,7 +43,16 @@ class Reviews extends Component {
                     page="reviews"
                     backdrop={this.state.backdrop}
                 />
-                <Display />
+                <Header />
+                <DisplayWrapper>
+                    {this.state.reviews.map(review => {
+                        return (
+                            <Display
+                                review={review}
+                            />
+                        )
+                    })}
+                </DisplayWrapper>
             </>
         )
     }

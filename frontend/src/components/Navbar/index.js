@@ -25,7 +25,8 @@ function Navbar({ page, backdrop }) {
             <div className="flex h-full items-center justify-center">
               <div className="text-white">
                 <h2 className="mb-4 text-4xl font-semibold">Movie Reviews & Recommendations</h2>
-                <h4 className="mb-6 text-xl font-semibold">Search for a movie to begin!</h4>
+                <h4 className="mb-6 text-xl font-semibold">Positive: 0 <br></br>
+                  Negative: 0</h4>
               </div>
             </div>
           </div>
