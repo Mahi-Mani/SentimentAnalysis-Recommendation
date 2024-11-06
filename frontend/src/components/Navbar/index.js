@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
 function Navbar({ page, backdrop }) {
-  console.log(`http://image.tmdb.org/t/p/w500${backdrop}`)
+  console.log(`http://image.tmdb.org/t/p/w500/${backdrop}.jpg`);
+  // const url="http://image.tmdb.org/t/p/w500/vL5LR6WdxWPjLPFRLe133jXWsh5.jpg";
   return (
     <>
       {page == "homepage" ?
@@ -19,7 +20,8 @@ function Navbar({ page, backdrop }) {
         </div>
         :
         <div
-          className={`relative h-[400px] overflow-hidden rounded-lg bg-[url(http://image.tmdb.org/t/p/w500${backdrop})] bg-cover bg-no-repeat p-12 text-center text-white`}>
+          className="relative h-[400px] overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center text-white"
+          style={{backgroundImage: `url(${backdrop})`}}>
           <div
             className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black/60 bg-fixed">
             <div className="flex h-full items-center justify-center">

@@ -41,7 +41,7 @@ class Reviews extends Component {
             <>
                 <Navbar
                     page="reviews"
-                    backdrop={this.state.backdrop}
+                    backdrop={`http://image.tmdb.org/t/p/w500/${this.state.backdrop}.jpg`}
                 />
                 <Header />
                 <DisplayWrapper>
