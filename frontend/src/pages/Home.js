@@ -44,6 +44,8 @@ class Home extends Component {
                 <Navbar
                     page="homepage"
                     backdrop="none"
+                    title="none"
+                    genre={[]}
                 />
                 <Form
                     handleInputChange={this.handleInputChange}

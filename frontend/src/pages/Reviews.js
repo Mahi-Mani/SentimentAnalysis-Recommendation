@@ -19,19 +19,30 @@ class Reviews extends Component {
     state = {
         reviews: [],
         backdrop: "",
-        movieId: 0
+        title: "",
+        movieId: 0,
+        movieDetails: {},
+        genre: []
     }
 
     componentDidMount() {
         const { location } = this.props;
-        const { backdrop, movieId } = location.state;
+        const { backdrop, movieId, title } = location.state;
         console.log(`Movie Id ${movieId}`);
         API.getReviews(movieId).then(data => {
             this.setState({
                 backdrop: backdrop,
                 movieId: movieId,
+                title: title,
                 reviews: data.data.results,
             });
+        })
+        API.getMovieDetails(movieId).then(data => {
+            console.log(data);
+            this.setState({
+                movieDetails: data.data,
+                genre: data.data.genres
+            })
         })
     }
 
@@ -41,7 +52,9 @@ class Reviews extends Component {
             <>
                 <Navbar
                     page="reviews"
+                    title={this.state.movieDetails.title}
                     backdrop={`http://image.tmdb.org/t/p/w500/${this.state.backdrop}.jpg`}
+                    genre={this.state.genre}
                 />
                 <Header />
                 <DisplayWrapper>

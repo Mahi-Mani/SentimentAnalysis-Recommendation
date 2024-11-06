@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
 
-function Navbar({ page, backdrop }) {
-  console.log(`http://image.tmdb.org/t/p/w500/${backdrop}.jpg`);
+function Navbar({ page, backdrop, title, genre }) {
+  console.log("Printing movie title");
+  console.log(genre);
+  {
+    genre.map((item, index) => {
+      console.log(item.name);
+    })
+  }
   // const url="http://image.tmdb.org/t/p/w500/vL5LR6WdxWPjLPFRLe133jXWsh5.jpg";
   return (
     <>
@@ -21,13 +27,17 @@ function Navbar({ page, backdrop }) {
         :
         <div
           className="relative h-[400px] overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center text-white"
-          style={{backgroundImage: `url(${backdrop})`}}>
+          style={{ backgroundImage: `url(${backdrop})` }}>
           <div
             className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black/60 bg-fixed">
             <div className="flex h-full items-center justify-center">
               <div className="text-white">
-                <h2 className="mb-4 text-4xl font-semibold">Movie Reviews & Recommendations</h2>
-                <h4 className="mb-6 text-xl font-semibold">Positive: 0 <br></br>
+                <h2 className="mb-4 text-4xl font-semibold">{title}</h2>
+                {genre.map((item, index) => {
+                  return (<>{item.name} </>)
+                })}
+                <h4 className="mb-6 text-xl font-semibold">
+                  Positive: 0 |
                   Negative: 0</h4>
               </div>
             </div>
