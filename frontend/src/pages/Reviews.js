@@ -58,7 +58,8 @@ class Reviews extends Component {
                 />
                 <Header />
                 <DisplayWrapper>
-                    {this.state.reviews.map(review => {
+                    {this.state.reviews.length > 0 ?
+                    this.state.reviews.map(review => {
                         return (
                             <Display
                                 author={review.author}
@@ -67,7 +68,10 @@ class Reviews extends Component {
                                 avatar={review.author_details.avatar_path}
                             />
                         )
-                    })}
+                    })
+                :
+                "No reviews"
+                }
                 </DisplayWrapper>
             </>
         )
